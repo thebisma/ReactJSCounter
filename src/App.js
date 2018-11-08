@@ -8,27 +8,40 @@ import { Link } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <div style={{ height: "700px", position: "relative" }}>
-        <Layout style={{ backgroundColor: "#FAFAFA" }}>
+      <div style={{ width: "100%", margin: "auto" }}>
+        <Layout>
           <Header
             className="header-color"
             title={
-              <span>
-                <h4>My Website</h4>
-              </span>
+              <Link style={{ textDecoration: "none", color: "white" }} to="/">
+                My Website
+              </Link>
             }
+            scroll
           >
             <Navigation>
-              <Link to="/aboutme">
+              <Link
+                style={{ textDecoration: "none", color: "white" }}
+                to="/aboutme"
+              >
                 <h5 style={{ color: "#fff" }}>Aboutme</h5>
               </Link>
-              <Link to="/counter">
+              <Link
+                style={{ textDecoration: "none", color: "white" }}
+                to="/counter"
+              >
                 <h5 style={{ color: "#fff" }}>Gallery</h5>
               </Link>
-              <Link to="/gallery">
+              <Link
+                style={{ textDecoration: "none", color: "white" }}
+                to="/gallery"
+              >
                 <h5 style={{ color: "#fff" }}>Counter</h5>
               </Link>
-              <Link to="/project">
+              <Link
+                style={{ textDecoration: "none", color: "white" }}
+                to="/project"
+              >
                 <h5 style={{ color: "#fff" }}>Project</h5>
               </Link>
             </Navigation>
