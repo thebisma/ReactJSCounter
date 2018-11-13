@@ -4,7 +4,8 @@
 
 .App-logo {
   animation: App-logo-spin infinite 10s linear;
-  height: 50vmin;
+  box-shadow: 0 90px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 90vmin;
 }
 
 .App-header {
@@ -30,7 +31,10 @@
     transform: rotate(360deg);
   }
 }
-
+.Icon-shake:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 0.3;
+}
 .Image-shake:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
@@ -72,36 +76,49 @@
 }
 .header-color {
   background: #004ff9; /* fallback for old browsers */
+  background: #7f7fd5; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to left,
-    #fff94c,
-    #004ff9
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to left,
-    #fff94c,
-    #004ff9
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .landing-grid {
   background: #004ff9; /* fallback for old browsers */
+  background: #7f7fd5; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to left,
-    #fff94c,
-    #004ff9
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to left,
-    #fff94c,
-    #004ff9
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   text-align: center;
+  position: relative;
+  height: 300%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .banner-text {
   background-color: black;
   opacity: 0.8;
-  width: 50%;
+  width: 55%;
+  height: 32%;
   margin: auto;
   border-radius: 10px;
 }
@@ -126,4 +143,99 @@
 
 .button-link {
   text-decoration: "none";
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 80px;
+}
+
+.social-links i:hover {
+  color: gray;
+  font-size: 80px;
+}
+
+.project-banner-text:hover {
+  color: white;
+  opacity: 0.3;
+}
+
+.project-grid-dua {
+  background: #004ff9; /* fallback for old browsers */
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  text-align: center;
+  /* position: relative;
+  height: 300%;
+  width: 100%;
+  top: 0;
+  left: 0; */
+}
+.project-banner-text-dua {
+  background-image: url("./sunedu.jpg");
+  opacity: 0.8;
+  width: 338px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 300;
+  height: 500;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  text-align: center;
+  background-color: #85a1e4;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 10px;
 }

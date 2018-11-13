@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
-import ImageProfile from "./bisma.jpg";
+import ImageProfile from "./bisma.png";
 class Landing extends Component {
   state = {};
   render() {
@@ -15,6 +15,36 @@ class Landing extends Component {
               <p>
                 HTML/CSS | React JS | Wordpress | React Native | Swift | Node JS
               </p>
+              <div className="social-links">
+                <a href="http://google.com" targets="_blank">
+                  <i
+                    className="fa fa-github-square"
+                    rel="noopener noreferrer"
+                    aria-hidden="true"
+                  />
+                </a>
+                <a href="http://google.com" targets="_blank">
+                  <i
+                    className="fa fa-linkedin-square"
+                    rel="noopener noreferrer"
+                    aria-hidden="true"
+                  />
+                </a>
+                <a href="http://google.com" targets="_blank">
+                  <i
+                    className="fa fa-youtube-square"
+                    rel="noopener noreferrer"
+                    aria-hidden="true"
+                  />
+                </a>
+                <a href="http://google.com" targets="_blank">
+                  <i
+                    className="fa fa-facebook-square"
+                    rel="noopener noreferrer"
+                    aria-hidden="true"
+                  />
+                </a>
+              </div>
             </div>
           </Cell>
         </Grid>

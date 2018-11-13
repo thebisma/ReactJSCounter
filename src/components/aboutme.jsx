@@ -1,11 +1,15 @@
 import React, { Component } from "react";
-
+import { Grid, Cell } from "react-mdl";
 class Aboutme extends Component {
   state = {};
   render() {
     return (
-      <div>
-        <h1>About me</h1>
+      <div style={{ width: "100%", margin: "auto" }}>
+        <Grid className="landing-grid">
+          <h1 style={{ fontSize: "66px", fontWeight: "bold", color: "white" }}>
+            About me
+          </h1>
+        </Grid>
       </div>
     );
   }

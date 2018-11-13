@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { Layout, Header, Content, Navigation, Drawer } from "react-mdl";
 import Main from "./components/main";
+import ImageProfile from "./logo.png";
 import { Link } from "react-router-dom";
 
 class App extends Component {
@@ -14,7 +15,7 @@ class App extends Component {
             className="header-color"
             title={
               <Link style={{ textDecoration: "none", color: "white" }} to="/">
-                My Website
+                Bisma Aviantara
               </Link>
             }
             scroll
@@ -22,35 +23,35 @@ class App extends Component {
             <Navigation>
               <Link
                 style={{ textDecoration: "none", color: "white" }}
-                to="/aboutme"
+                to="/project"
               >
-                <h5 style={{ color: "#fff" }}>Aboutme</h5>
+                <h5 style={{ color: "#fff" }}>Project</h5>
               </Link>
               <Link
                 style={{ textDecoration: "none", color: "white" }}
                 to="/counter"
               >
-                <h5 style={{ color: "#fff" }}>Gallery</h5>
+                <h5 style={{ color: "#fff" }}>Counter</h5>
               </Link>
               <Link
                 style={{ textDecoration: "none", color: "white" }}
                 to="/gallery"
               >
-                <h5 style={{ color: "#fff" }}>Counter</h5>
+                <h5 style={{ color: "#fff" }}>Gallery</h5>
               </Link>
               <Link
                 style={{ textDecoration: "none", color: "white" }}
-                to="/project"
+                to="/aboutme"
               >
-                <h5 style={{ color: "#fff" }}>Project</h5>
+                <h5 style={{ color: "#fff" }}>Aboutme</h5>
               </Link>
             </Navigation>
           </Header>
-          <Drawer title="Title">
+          <Drawer title="">
             <Navigation>
               <Link to="/aboutme">aboutme</Link>
-              <Link to="/counter">gallery</Link>
-              <Link to="/gallery">counter</Link>
+              <Link to="/counter">counter</Link>
+              <Link to="/gallery">gallery</Link>
               <Link to="/project">project</Link>
             </Navigation>
           </Drawer>
